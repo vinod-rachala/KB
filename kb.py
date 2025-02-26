@@ -3,7 +3,7 @@ import pymongo
 import json
 import os
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import MongoDBAtlas
+from langchain.vectorstores.mongodb import MongoDBAtlas
 from langchain.chains import RetrievalQA
 from langchain.chat_models import Bedrock
 
