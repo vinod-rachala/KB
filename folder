@@ -1,0 +1,21 @@
+mcrh/
+├── ec2_scripts/                # EC2-hosted job scripts
+│   ├── ingestion/
+│   │   ├── extract_text.py     # Extracts text from files
+│   │   └── chunk_and_embed.py  # Chunks text and stores embeddings
+│   ├── query/
+│   │   └── query_generate.py   # Retrieves vectors and generates responses
+│   ├── management/
+│   │   └── manage_files.py     # Manages files with vector deletion option
+│   └── common/
+│   │   └── secrets_helper.py   # Retrieves MongoDB Atlas credentials
+├── api/
+│   └── server.py              # FastAPI server on EC2
+├── ui/
+│   └── src/
+│       └── App.js            # React UI
+├── deployment/
+│   ├── terraform/
+│   │   └── main.tf          # Terraform config for AWS resources
+│   └── requirements.txt      # Python dependencies
+└── README.md                 # Documentation
