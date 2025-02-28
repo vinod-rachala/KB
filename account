@@ -1,0 +1,31 @@
++-----------------------+
+|  Users (Teams)        |
++-----------------------+
+          ↓
++-----------------------+
+| Amazon API Gateway    |
+| (Cognito Auth)        |
++-----------------------+
+          ↓
++-----------------------+
+| Amazon EKS Cluster    |
+| - Shared Application  |
+| - Tenant Context Logic|
+| - STS Role Assumption |
++-----------------------+
+          ↓
++-----------------------+-----------------------+
+| Tenant-Specific Resources (via IAM Roles)     |
+|                                               |
+| +------------------+     +------------------+ |
+| | Amazon S3        |     | Amazon OpenSearch| |
+| | - team1/*       |     | - team1-index    | |
+| | - team2/*       |     | - team2-index    | |
+| +------------------+     +------------------+ |
+|                                               |
+| +------------------+     +------------------+ |
+| | Secrets Manager  |     | AWS Bedrock       | |
+| | - team1 secrets  |     | (Shared Access)   | |
+| | - team2 secrets  |     +------------------+ |
+| +------------------+                          |
++-----------------------+-----------------------+
