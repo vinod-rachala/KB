@@ -1,0 +1,94 @@
+Certainly! Here's a **more professional and polished version** of the Confluence documentation guideline suitable for enterprise environments:
+
+---
+
+## **Confluence Documentation Standards & Guidelines**
+
+This guide outlines best practices for creating, structuring, and maintaining documentation in Confluence to ensure clarity, consistency, and long-term usability.
+
+---
+
+### **1. Document Structure & Templates**
+- **Utilize Standard Templates**: Leverage Confluence’s built-in templates such as:
+  - *Product Requirements*
+  - *Project Plans*
+  - *Runbooks*
+  - *Decision Logs*
+- **Follow a Logical Hierarchy**:
+  - **Title**: Concise and descriptive
+  - **Overview/Purpose**: Clearly define the objective of the document
+  - **Scope**: Specify what is and isn’t covered
+  - **Content**: Structured using proper headings (H2, H3, H4)
+  - **References**: Include related documentation or external links
+  - **Ownership**: Indicate the content owner and reviewer (if applicable)
+
+---
+
+### **2. Writing Style**
+- **Be Clear and Concise**: Use plain, professional language and avoid ambiguity.
+- **Use Active Voice**: Improves readability (e.g., "Update the record" vs. "The record should be updated").
+- **Avoid Redundancy**: Eliminate repetitive content and filler text.
+- **Standard Terminology**: Use consistent terminology across documents.
+
+---
+
+### **3. Formatting Standards**
+- **Headings**: Maintain a logical structure using H2, H3, H4 to reflect content depth.
+- **Text Styling**:
+  - **Bold** – Key terms or actions
+  - *Italics* – Emphasis
+  - `Monospace` – Code, CLI commands, file paths
+- **Macros**: Utilize Confluence macros for:
+  - Status indicators (e.g., “In Progress”, “Completed”)
+  - Table of contents (for longer pages)
+  - Expandable sections (for optional or advanced content)
+
+---
+
+### **4. Visual Elements**
+- **Diagrams**: Use tools like **draw.io**, **Gliffy**, or **Lucidchart** for architectural diagrams or workflows.
+- **Screenshots**: Ensure they are high-resolution, current, and annotated if necessary.
+- **Captions and Alt Text**: Always provide context or labels for visual elements.
+
+---
+
+### **5. Linking & Navigation**
+- **Internal Linking**: Reference related Confluence pages to provide additional context.
+- **External Resources**: Link to external documentation, specifications, or APIs when appropriate.
+- **Anchor Links**: Useful for navigation within long documents.
+- **Breadcrumbs**: Organize content within an intuitive space and page tree.
+
+---
+
+### **6. Version Control & Change Tracking**
+- **Page History**: Leverage Confluence’s built-in versioning to track changes.
+- **Change Log Table** (optional): For critical documents, maintain a table with:
+  - Date
+  - Change Summary
+  - Author
+- **Last Updated**: Include a timestamp or footer noting the last review/update.
+
+---
+
+### **7. Access Control & Permissions**
+- **Appropriate Restrictions**: Apply view/edit permissions based on team or project needs.
+- **Space Organization**: Ensure documents are stored in the correct space aligned with team/project hierarchy.
+- **Labeling**: Use consistent and meaningful labels to enhance searchability.
+
+---
+
+### **8. Review & Maintenance**
+- **Regular Audits**: Schedule periodic reviews (e.g., quarterly) for accuracy and relevance.
+- **Archiving**: Move outdated or deprecated content to an archive section.
+- **Review Metadata**: Optionally include a “Next Review Date” and reviewer name at the end of the page.
+
+---
+
+### **9. Collaboration Best Practices**
+- **Comments**: Use inline or page-level comments for feedback.
+- **Mentions**: Use `@username` to assign or notify collaborators.
+- **Watchers**: Add stakeholders as watchers to track page updates.
+
+---
+
+Would you like this turned into a reusable **Confluence page template** format with macros included?
