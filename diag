@@ -1,0 +1,42 @@
+                          ┌───────────────────────────────────────────┐
+                          │        GCP Organization (Org Admin)        │
+                          └───────────────────────────────────────────┘
+                                       │
+            ┌─────────────────────────────────────────────────────────────┐
+            │                 Shared Folders & Projects                   │
+            ├─────────────────────────────────────────────────────────────┤
+            │  Shared VPC Host Project   │   Security / IAM Project        │
+            │  (central networking)      │   (audit, secrets, policies)    │
+            │                            │                                 │
+            │  Logging & Monitoring      │   AI Shared Services Project    │
+            │  (central log sink,        │   (feature store, vector DB,    │
+            │   monitoring workspace)    │    prompt library, model reg)   │
+            └─────────────────────────────────────────────────────────────┘
+                                       │
+                 ┌─────────────────────────────────────────────┐
+                 │ AI Platform Folder (per team / environment) │
+                 ├─────────────────────────────────────────────┤
+                 │ finance-ml-dev         finance-ml-prod      │
+                 │ marketing-genai-dev    marketing-genai-prod │
+                 │ ops-ml-prod            ops-genai-prod       │
+                 └─────────────────────────────────────────────┘
+                                       │
+           ┌───────────────────────────────────────────────────────────┐
+           │ Vertex AI (Training, Model Registry, Pipelines, Notebooks) │
+           │ Gemini API (GenAI Foundation Models, RAG, Prompt Library) │
+           │ Vector DB (AlloyDB pgvector or Matching Engine)            │
+           │ Feature Store (Vertex AI Feature Store)                    │
+           └───────────────────────────────────────────────────────────┘
+                                       │
+                    ┌───────────────────────────────────────┐
+                    │    AI Gateway (Shared Ingress)        │
+                    │ Auth, Routing, Token Limits, Logging  │
+                    └───────────────────────────────────────┘
+                                       │
+        ┌─────────────────────────────────────────────────────────────┐
+        │       Project-specific Workloads (Deployed Models & Apps)   │
+        │   - Finance Fraud Detection (ML)                            │
+        │   - Finance RAG Assistant (GenAI)                           │
+        │   - Marketing Chatbots & Summarizers                        │
+        │   - Ops Optimization + GenAI Knowledge Search               │
+        └─────────────────────────────────────────────────────────────┘
